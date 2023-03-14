@@ -1,5 +1,5 @@
 #!/bin/bash
-
+touch container_images.txt
 docker_images=$(docker images -q)
 all_containers=$(docker ps -aq --format "{{.Names}}")
 for image in $all_containers;
