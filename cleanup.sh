@@ -35,8 +35,8 @@ if (( folder_count > max_folder_count )); then
 
     # check if the folder age is greater than the maximum allowed
     if (( folder_age > max_folder_age )); then
-      # remove the folder
-     # rm -rf "$folder"
+      #remove the folder
+      rm -rf "$folder"
      if [[ -d $folder ]] ; then
       rm -rf "$folder"
       echo "Removed folder: $folder"
